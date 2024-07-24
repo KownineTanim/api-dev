@@ -1,5 +1,5 @@
 1. Clone the repository:
-   git clone https://github.com/your-username/laravel-api-jwt.git
+   git clone https://github.com/KownineTanim/api-dev.git
    cd api-dev
 2. Install all the dependencies using composer:
     composer install
