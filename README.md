@@ -13,7 +13,7 @@
     composer require php-open-source-saver/jwt-auth
 7. Publish the package configuration (if needed):
     php artisan vendor:publish --provider="PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider"
-8. Generate the JWT secret key (if needed):
+8. Generate the JWT secret key:
     php artisan jwt:secret
 9. Start the local development server:
     php artisan serve
