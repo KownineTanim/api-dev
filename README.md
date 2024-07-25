@@ -1,3 +1,27 @@
+1. Clone the repository:
+   git clone https://github.com/KownineTanim/api-dev.git
+   cd api-dev
+2. Install all the dependencies using composer:
+    composer install
+3. Copy the `.env.example` file to `.env`:
+    cp .env.example .env
+4. Generate the application key:
+    php artisan key:generate
+5. Run the database migrations:
+    php artisan migrate
+6. Install the `php-open-source-saver/jwt-auth` package (if needed):
+    composer require php-open-source-saver/jwt-auth
+7. Publish the package configuration (if needed):
+    php artisan vendor:publish --provider="PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider"
+8. Generate the JWT secret key (if needed):
+    php artisan jwt:secret
+9. Start the local development server:
+    php artisan serve
+Now you can run the application via postman
+Before checking all endpoints please register first as below route
+POST /api/v1/register: Register a new user.
+POST /api/v1/login: Authenticate a user and get a token and use this token as Headers Key named Authorization, Value Bearer token  to check all endpoints
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
