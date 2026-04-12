@@ -40,7 +40,7 @@ class CategoryController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Category created successfully',
+            'message' => 'Category created successfully test commit',
             'data' => [],
         ], 201);
 
